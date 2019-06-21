@@ -1,0 +1,11 @@
+<Scroll onScroll={animateComponent} onScrollDragEnd={bounceAnimatedComponent}>
+  <MyComponent style={animatedStyel} />
+</Scroll>
+
+/ ***************************** /
+
+<Swipe
+  onSwipeRight={() => setPage(p => p + 1)}
+  onSwipeLeft={() => setPage(p => p - 1)}>
+  <Pager page={page} />
+</Swipe>

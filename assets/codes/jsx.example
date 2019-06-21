@@ -1,0 +1,6 @@
+<ComponentA>
+  <ComponentB name={"Eddie"}>
+    <ComponentB1 name={"Eddie"} />
+    <ComponentB2 name={"Eddie"} />
+  </ComponentB>
+</ComponentA>

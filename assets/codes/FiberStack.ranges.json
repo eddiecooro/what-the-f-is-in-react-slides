@@ -1,0 +1,147 @@
+[
+  {
+    "loc": [0, 25]
+  },
+  {
+    "loc": [0, 1],
+    "notes": {
+      "nextUnitOfWork": "ComponentAFiber={child:ComponentBFiber,return:null,sibling:null}",
+      "scheduler.remainingTime": "500ms"
+    }
+  },
+  { "loc": [1, 2] },
+  {
+    "loc": [3, 9],
+    "stack": { "add": { "name": "workLoop", "args": "[]", "return": 2 } }
+  },
+  { "loc": [4, 7] },
+  { "loc": [4, 5] },
+  { "loc": [5, 6] },
+  {
+    "loc": [9, 22],
+    "stack": {
+      "add": {
+        "name": "performUnitOfWork",
+        "args": "[{ name: 'fiber', value: 'nextUnitOfWork' }]",
+        "return": 6
+      }
+    }
+  },
+  { "loc": [10, 11], "notes": { "scheduler.remainingTime": "400ms" } },
+  { "loc": [11, 12] },
+  { "loc": [12, 13] },
+  { "loc": [5, 6], "stack": { "pop": "performUnitOfWork" } },
+  {
+    "loc": [5, 6],
+    "notes": {
+      "nextUnitOfWork": "ComponentBFiber={child:ComponentB1Fiber,return:ComponentAFiber,sibling:null}"
+    }
+  },
+  { "loc": [4, 7] },
+  { "loc": [4, 5] },
+  { "loc": [5, 6] },
+  {
+    "loc": [9, 22],
+    "stack": {
+      "add": {
+        "name": "performUnitOfWork",
+        "args": "[{ name: 'fiber', value: 'nextUnitOfWork' }]",
+        "return": 6
+      }
+    }
+  },
+  { "loc": [10, 11], "notes": { "scheduler.remainingTime": "200ms" } },
+  { "loc": [11, 12] },
+  { "loc": [12, 13] },
+  { "loc": [5, 6], "stack": { "pop": "performUnitOfWork" } },
+  {
+    "loc": [5, 6],
+    "notes": {
+      "nextUnitOfWork": "ComponentB1Fiber={child:null,return:ComponentBFiber,sibling:componentB2Fiber}"
+    }
+  },
+  { "loc": [4, 7] },
+  { "loc": [4, 5] },
+  { "loc": [5, 6] },
+  {
+    "loc": [9, 22],
+    "stack": {
+      "add": {
+        "name": "performUnitOfWork",
+        "args": "[{ name: 'fiber', value: 'nextUnitOfWork' }]",
+        "return": 6
+      }
+    }
+  },
+  { "loc": [10, 11], "notes": { "scheduler.remainingTime": "0ms" } },
+  { "loc": [11, 12] },
+  { "loc": [14, 15], "notes": { "fiberToReturn": "componentB1Fiber" } },
+  { "loc": [15, 16] },
+  { "loc": [19, 20] },
+  {
+    "loc": [5, 6],
+    "stack": { "pop": "performUnitOfWork" },
+    "notes": { "fiberToReturn": null }
+  },
+  {
+    "loc": [5, 6],
+    "notes": {
+      "nextUnitOfWork": "ComponentB2Fiber={child:null,return:ComponentBFiber,sibling:null}"
+    }
+  },
+  { "loc": [4, 7] },
+  { "loc": [3, 8] },
+  { "loc": [1, 2], "stack": { "pop": "workLoop" } },
+  { "loc": [0, 25] },
+  {
+    "loc": [3, 8],
+    "stack": {
+      "add": {
+        "name": "workLoop",
+        "args": "[]",
+        "return": "somewhere in scheduler"
+      }
+    },
+    "notes": { "scheduler.remainingTime": "450ms" }
+  },
+  { "loc": [4, 7] },
+  {
+    "loc": [5, 6]
+  },
+  {
+    "loc": [9, 22],
+    "stack": {
+      "add": {
+        "name": "performUnitOfWork",
+        "args": "[{ name: 'fiber', value: 'nextUnitOfWork' }]",
+        "return": 6
+      }
+    }
+  },
+  { "loc": [10, 11], "notes": { "scheduler.remainingTime": "220ms" } },
+  { "loc": [11, 12] },
+  { "loc": [14, 15], "notes": { "fiberToReturn": "componentB2Fiber" } },
+  { "loc": [15, 16] },
+  { "loc": [16, 17] },
+  { "loc": [16, 17], "notes": { "fiberToReturn": "ComponentAFiber" } },
+  { "loc": [17, 18] },
+  { "loc": [15, 19] },
+  { "loc": [15, 16] },
+  { "loc": [16, 17] },
+  { "loc": [16, 17], "notes": { "fiberToReturn": "null" } },
+  { "loc": [17, 18] },
+  {
+    "loc": [5, 6],
+    "stack": { "pop": "performUnitOfWork" },
+    "notes": { "fiberToReturn": null }
+  },
+  {
+    "loc": [5, 6],
+    "notes": {
+      "nextUnitOfWork": "null"
+    }
+  },
+  { "loc": [4, 7] },
+  { "loc": [3, 8] },
+  { "loc": [0, 25], "stack": { "pop": "workLoop" } }
+]

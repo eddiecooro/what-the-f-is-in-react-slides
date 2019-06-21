@@ -1,0 +1,24 @@
+let nextUnitOfWork = ComponentAFiber;
+workLoop();
+
+function workLoop() {
+    while(nextUnitOfWork !== null && scheduler.hasTime()) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
+    }
+}
+
+function performUnitOfWork(fiber) {
+    beginWork(fiber)
+    if(fiber.child) {
+        return fiber.child;
+    }
+    let fiberToReturn = fiber;
+    while(!fiberToReturn.sibling) {
+        fiberToReturn = fiberToReturn.return;
+        if(!fiberToReturn) return null;
+    }
+    return fiberToReturn.sibling;
+}
+
+
+

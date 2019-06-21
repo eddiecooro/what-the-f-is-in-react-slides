@@ -1,0 +1,68 @@
+[
+  {
+    "loc": [0, 1],
+    "title": "Fiber Data-Structure",
+    "note": "A Fiber is work on a Component that needs to be done or was done"
+  },
+  {
+    "loc": [1, 2],
+    "title": "Tag identifying the type of fiber",
+    "note": "For example: FunctionalComponent, ClassComponent, Fragment or ContextConsumer"
+  },
+  {
+    "loc": [2, 3],
+    "title": "Unique identifier of this child",
+    "note": "Same as what we pass to our components in the props"
+  },
+  {
+    "loc": [6, 7],
+    "title": "The Fiber to return",
+    "note": "Usually same as parent of the current component"
+  },
+  {
+    "loc": [7, 8],
+    "title": "First child of this fiber",
+    "note": "Pay attention that child value is not an array"
+  },
+  {
+    "loc": [8, 9],
+    "title": "Next sibling of this fiber",
+    "note": "This also is not an array"
+  },
+  {
+    "loc": [11, 12],
+    "title": "Next props of this component",
+    "note": "It gets updated at the render phase"
+  },
+  {
+    "loc": [12, 13],
+    "title": "Last props used to render this fiber",
+    "note": "It gets updated at the end of commit phase"
+  },
+  {
+    "loc": [13, 14],
+    "title": "Linked list of updates associated with this fiber",
+    "note": "For example, setState, forceUpdate or an clickEvent fired by browser"
+  },
+  { "loc": [14, 15], "title": "Last state used to render this fiber" },
+  {
+    "loc": [17, 18],
+    "title": "bitField of needed effects",
+    "note": "For example updating the DOM or calling the componentDidMount"
+  },
+  {
+    "loc": [18, 21],
+    "title": "linkedList of fibers with EffectTags",
+    "note": "Needed in the commit phase for traversing only fibers with effects."
+  },
+  {
+    "loc": [21, 22],
+    "title": "What makes time slicing work",
+    "note": "Represents a time in the future by which this work should be completed."
+  },
+  {
+    "loc": [23, 24],
+    "title": "Alternate of current fiber",
+    "note": "It contains updated fiber at the render phase and old fiber after the commit phase"
+  }
+]

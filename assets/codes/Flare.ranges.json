@@ -1,0 +1,12 @@
+[
+  {
+    "loc": [0, 3],
+    "title": "Scroll module",
+    "note": "Soon you will be able to write things like this:"
+  },
+  {
+    "loc": [6, 11],
+    "title": "Swipe module",
+    "note": "Or like this:"
+  }
+]

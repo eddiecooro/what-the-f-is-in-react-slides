@@ -1,0 +1,6 @@
+[
+  { "loc": [0, 1] },
+  { "loc": [4, 5], "title": "Instead of this:" },
+  { "loc": [8, 10], "title": "Do this:" },
+  { "loc": [13, 19], "title": "But for now stick to this:" }
+]

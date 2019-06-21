@@ -1,0 +1,14 @@
+function Dropdown({ children }) {
+  const hovered = useHover();
+  return (
+    <div style={dropdown}>
+      <img src={logo} />
+      <Hover>
+        <p>Hover to show</p>
+      </Hover>
+      <div style={content}>
+        {hovered ? children : null}
+      </div>
+    </div>
+  )
+}

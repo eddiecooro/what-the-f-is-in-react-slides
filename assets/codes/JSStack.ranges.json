@@ -1,0 +1,46 @@
+[
+  { "loc": [0, 23] },
+  { "loc": [21, 22] },
+  {
+    "loc": [0, 3],
+    "stack": {
+      "add": { "name": "render", "args": "[{ name: 'component', value: 'function:renderComponentA' }]", "return": 22 }
+    }
+  },
+  { "loc": [1, 2] },
+  { "loc": [4, 7], "stack": { "add": { "name": "renderComponentA", "args": "[]", "return": 2 } } },
+  { "loc": [5, 6] },
+  {
+    "loc": [8, 12],
+    "stack": {
+      "add": { "name": "renderComponentB", "args": "[{ name: 'props', value: { name: 'Eddie' }}]", "return": 6 }
+    }
+  },
+  { "loc": [9, 10] },
+  {
+    "loc": [13, 16],
+    "stack": {
+      "add": { "name": "renderComponentB1", "args": "[{ name: 'props', value: { name: 'Eddie' }}]", "return": 10 }
+    }
+  },
+  { "loc": [14, 15] },
+  { "loc": [13, 16] },
+  { "loc": [9, 10], "stack": { "pop": "renderComponentB1" } },
+  { "loc": [10, 11] },
+  {
+    "loc": [17, 20],
+    "stack": {
+      "add": { "name": "renderComponentB2", "args": "[{ name: 'props', value: { name: 'Eddie' }}]", "return": 11 }
+    }
+  },
+  { "loc": [18, 19] },
+  { "loc": [17, 20] },
+  { "loc": [10, 11], "stack": { "pop": "renderComponentB2" } },
+  { "loc": [8, 12] },
+  { "loc": [5, 6], "stack": { "pop": "renderComponentB" } },
+  { "loc": [4, 7] },
+  { "loc": [1, 2], "stack": { "pop": "renderComponentA" } },
+  { "loc": [0, 3] },
+  { "loc": [21, 22], "stack": { "pop": "render" } },
+  { "loc": [0, 23] }
+]

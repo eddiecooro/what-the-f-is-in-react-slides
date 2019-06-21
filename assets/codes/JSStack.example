@@ -1,0 +1,22 @@
+function render(component) {
+  component();
+}
+
+function renderComponentA() {
+  renderComponentB({ name: 'Eddie' })
+}
+
+function renderComponentB(props) {
+  renderComponentB1(props)
+  renderComponentB2(props)
+}
+
+function renderComponentB1(props) {
+  console.log("Rendering Component B1 with: props.name")
+}
+
+function renderComponentB2(props) {
+  console.log("Rendering Component B2 with: props.name")
+}
+
+render(renderComponentA);
